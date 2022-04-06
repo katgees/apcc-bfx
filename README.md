@@ -1,6 +1,5 @@
 # biocode
 
-"private repository for final project for advanced practical conputer concepts"
+*"private repository for final project for advanced practical computer concepts"*
 
-student: Katharina Gees
-professor: Joshua Orvis
+**Katharina Gees**
