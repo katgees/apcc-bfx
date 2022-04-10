@@ -1,5 +1,5 @@
-# default readme file
+# README.md
 
-*"private repository for final project for advanced practical computer concepts"*
+*apcc-bfx is a "private repository for final project for advanced practical computer concepts"*
 
-**Katharina Gees**
+katgees = **Katharina Gees** = kgees1
