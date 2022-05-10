@@ -1,3 +1,10 @@
+Notes:
 
 - install requests package
--
+
+- issues with running job:
+    - translating to x-www-form-urlencoded
+    - receiving a job ID to receive results
+
+- used https://www.ebi.ac.uk/Tools/services/rest/muscle/resulttypes/<jobid> to get result types
+- result types list https://www.ebi.ac.uk/seqdb/confluence/display/JDSAT/MUSCLE+Help+and+Documentation was incomplete
