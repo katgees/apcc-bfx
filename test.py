@@ -18,9 +18,25 @@ def main():
     request = requests.get('https://www.ebi.ac.uk/Tools/services/rest/muscle/result/'+job_id+'/aln-clustalw')
     print(request.text)
 
+    alignment = request.text
+    asterisk = 0
+    colon = 0
+    period = 0
+
+    for char in alignment:
+        if char == '*':
+            asterisk+=1
+        if char == ':':
+            colon+=1
+        if char == '.':
+            period+=1
+
+    print('*='+str(asterisk)+', :='+str(colon)+ ', .='+str(period))
+
+
     # job ID list
     id_list = open('files/list.txt', 'a')
-    id_list.write(job_id+'\n')
+    #id_list.write(job_id+'\n')
     id_list.close()
 
     # CLUSTAL MSA by MUSCLE alignments
