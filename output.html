@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Output Page</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+
+</head>
+<body>
+
+    <h1>MSA Viewer</h1>
+
+    <section id="results">
+
+        <p class="special">
+            Job ID: {{ job_id }}
+        </p>
+
+        <p>
+            {{ align }}
+        </p>
+
+        <p>
+            Asterisks: {{ data[0] }}<br>
+            <small class="smallp">
+                Asterisks (*) indicates positions which have a single, fully conserved residue.
+            </small><br>
+
+            Colons: {{ data[1] }}<br>
+            <small class="smallp">
+                Colons (:) indicates conservation between groups of strongly similar properties
+            </small><br>
+
+            Periods: {{ data[2] }}<br>
+            <small class="smallp">
+                Periods (.) indicates conservation between groups of weakly similar properties.
+            </small><br>
+        </p>
+
+    </section>
+
+</body>
+</html>
