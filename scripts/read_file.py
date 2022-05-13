@@ -8,12 +8,12 @@ import os
 
 
 def read_file():
-    msa_type = 'muscle'  # hardcoded job type
+    job_type = 'muscle'  # hardcoded job type
 
     os.chdir('C:/Users/Katharina/Documents/GitHub/apcc-bfx/files')
     file_list = os.listdir()  # returns a list of the files in cwd
 
-    file_name = [i for i in file_list if i.startswith(msa_type)]
+    file_name = [i for i in file_list if i.startswith(job_type)]
     job_id = file_name[0]
 
     asterisk = 0
@@ -31,9 +31,9 @@ def read_file():
                 period += 1
 
     print('File name: ' + file.name)
-    print('* (asterisks): ' + str(asterisk))
-    print(': (colons): ' + str(colon))
-    print('. (periods): ' + str(period))
+    print('Asterisks (*): ' + str(asterisk))
+    print('Colons (:): ' + str(colon))
+    print('Periods (.): ' + str(period))
 
 
 read_file()
