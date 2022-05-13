@@ -11,9 +11,13 @@ body {
     padding: 16px 48px 16px;
 }
 
+footer {
+    padding-top: 48px;
+}
+
 form {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     padding-top: 25px;
 }
 

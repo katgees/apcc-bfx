@@ -24,23 +24,29 @@
         </p>
 
         <p>
-            Asterisks: {{ data[0] }}<br>
-            <small class="small">
-                Asterisks (*) indicates positions which have a single, fully conserved residue.
-            </small><br>
+            Asterisks: {{ data[0] }}
+            Colons: {{ data[1] }}
+            Periods: {{ data[2] }}
+        </p>
 
-            Colons: {{ data[1] }}<br>
-            <small class="small">
-                Colons (:) indicates conservation between groups of strongly similar properties
-            </small><br>
-
-            Periods: {{ data[2] }}<br>
-            <small class="small">
-                Periods (.) indicates conservation between groups of weakly similar properties.
-            </small><br>
+        <p class="small">
+            Asterisks (*) indicates positions which have a single, fully conserved residue.<br>
+            Colons (:) indicates conservation between groups of strongly similar properties.<br>
+            Periods (.) indicates conservation between groups of weakly similar properties.<br>
         </p>
 
     </section>
+
+    <!-- images (logos) -->
+    <!-- "I added these images because it seemed fun to do." - Gees -->
+    <footer>
+        <center>
+        <img src="img/jhu_logo.svg" class="bg" alt="Johns Hopkins University logo from
+        https://www.jhu.edu/admissions/ header"> &nbsp; &nbsp; &nbsp;
+        <img src="img/embl_ebi_logo.svg" alt="EMBL-EBI logo from
+        https://www.ebi.ac.uk/Tools/msa/ footer">
+        </center>
+    </footer>
 
 </body>
 </html>

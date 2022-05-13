@@ -43,12 +43,12 @@ def main():
     analysis.append(period)
 
     # save data
-    id_list = open('files/list.txt', 'a')       # open file for job IDs
-    id_list.write(job_id+'\n')                  # write job ID to file
-    id_list.close()                             # close ID list file
-    file = open(('files/'+job_id+'.txt'), 'w')  # create and open file for alignment
-    file.write(request.text)                    # write alignment to file
-    file.close()                                # close file
+    #id_list = open('files/list.txt', 'a')       # open file for job IDs
+    #id_list.write(job_id+'\n')                  # write job ID to file
+    #id_list.close()                             # close ID list file
+    #file = open(('files/'+job_id+'.txt'), 'w')  # create and open file for alignment
+    #file.write(request.text)                    # write alignment to file
+    #file.close()                                # close file
 
     print("Content-Type: text/html\n\n")
     print(template.render(job_id=job_id, align=alignment, data=analysis))

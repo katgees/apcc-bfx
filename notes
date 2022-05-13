@@ -11,3 +11,5 @@ Notes:
 
 - considered adding a checkboxradio button to select other MSA but I can get MSA type from job ID
 - installed jinja2 package
+
+- tried javascript for 7 hours, it didn't work and I ended up losing it all
