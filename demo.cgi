@@ -4,6 +4,8 @@ import jinja2
 import os
 import requests
 
+print("Content-Type: text/html\n\n")
+
 # DEMO ONLY
 job_id = 'muscle-I20220513-220023-0114-59900534-p2m'  # hardcoded job id
 # DEMO ONLY
@@ -25,7 +27,7 @@ response = requests.get('https://www.ebi.ac.uk/Tools/services/rest/'
 
 aln_clustalw = response.text  # .text returns the content
 
-os.chdir('C:/Users/Katharina/Documents/GitHub/apcc-bfx/files')
+os.chdir('../apcc-bfx/files')
 
 file = open((job_id + '.txt'), 'w')  # create and open file for alignment
 file.write(aln_clustalw)  # write alignment to file
@@ -34,14 +36,17 @@ file.close()  # close file
 file_list = os.listdir()  # returns a list of the files in cwd
 
 file_name = [i for i in file_list if i.startswith(job_type)]
-job_id = file_name[0]
+job_file = file_name[0]
 
+aln = []
 asterisk = 0
 colon = 0
 period = 0
 
-file = open(job_id)
+file = open(job_file)
 for line in file:
+    line = line.rstrip('\n')
+    aln.append(line)
     for char in line:
         if char == '*':
             asterisk += 1
@@ -50,5 +55,6 @@ for line in file:
         if char == '.':
             period += 1
 
-print("Content-Type: text/html\n\n")
-print(template.render(ji=job_id, aln=aln_clustalw, ast=asterisk, col=colon, per=period))
+print(template.render(ji=job_id, aln=aln, ast=asterisk, col=colon, per=period))
+
+# Katharina Gees

@@ -14,13 +14,29 @@
     <h1>MSA Viewer - Demo</h1>
 
     <p class="special">
-        Job ID:&nbsp;{{ ji }}
+        Job ID:&nbsp;muscle-I20220513-220023-0114-59900534-p2m
     </p>
 
     <p class="medium">
         <pre>
-{% for a in aln %}
-{{ a }}{% endfor %}
+
+CLUSTAL multiple sequence alignment by MUSCLE (3.8)
+
+
+sp|P13786|HBAZ_CAPHI      MSLTRTERTIILSLWSKISTQADVIGTETLERLFSCYPQAKTYFPHFDLHSGSAQLRAHG
+sp|P69905|HBA_HUMAN       MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHG
+sp|P01942|HBA_MOUSE       MVLSGEDKSNIKAAWGKIGGHGAEYGAEALERMFASFPTTKTYFPHFDVSHGSAQVKGHG
+                          * *:  :.: : : *.*:. :.   *:*:***:* .:* :********:  ****:..**
+
+sp|P13786|HBAZ_CAPHI      SKVVAAVGDAVKSIDNVTSALSKLSELHAYVLRVDPVNFKFLSHCLLVTLASHFPADFTA
+sp|P69905|HBA_HUMAN       KKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTP
+sp|P01942|HBA_MOUSE       KKVADALASAAGHLDDLPGALSALSDLHAHKLRVDPVNFKLLSHCLLVTLASHHPADFTP
+                          .**. *: .*.  :*::..*** **:***: *********:**********:* **:**.
+
+sp|P13786|HBAZ_CAPHI      DAHAAWDKFLSIVSGVLTEKYR
+sp|P69905|HBA_HUMAN       AVHASLDKFLASVSTVLTSKYR
+sp|P01942|HBA_MOUSE       AVHASLDKFLASVSTVLTSKYR
+                           .**: ****: ** ***.***
         </pre>
     </p>
 
@@ -28,17 +44,17 @@
         <tr>
             <th>Asterisks</th>
             <th>&emsp;*&emsp;</th>
-            <th>{{ ast }}</th>
+            <th>76</th>
         </tr>
         <tr>
             <th>Colons</th>
             <th>&emsp;:&emsp;</th>
-            <th>{{ col }}</th>
+            <th>25</th>
         </tr>
         <tr>
             <th>Periods</th>
             <th>&emsp;.&emsp;</th>
-            <th>{{ per }}</th>
+            <th>17</th>
         </tr>
     </table>
 
