@@ -10,7 +10,7 @@ import os
 def read_file():
     job_type = 'muscle'  # hardcoded job type
 
-    os.chdir('C:/Users/Katharina/Documents/GitHub/apcc-bfx/files')
+    os.chdir('../files')
     file_list = os.listdir()  # returns a list of the files in cwd
 
     file_name = [i for i in file_list if i.startswith(job_type)]

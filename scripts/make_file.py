@@ -20,7 +20,7 @@ def make_file():
 
     aln_clustalw = response.text  # .text returns the content
 
-    os.chdir('C:/Users/Katharina/Documents/GitHub/apcc-bfx/files')
+    os.chdir('../files')
 
     file = open((job_id + '.txt'), 'w')  # create and open file for alignment
     file.write(aln_clustalw)  # write alignment to file
