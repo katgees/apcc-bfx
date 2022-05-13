@@ -15,7 +15,7 @@ env = jinja2.Environment(loader=templateLoader)  # create environment
 template = env.get_template('demo.html')  # load template
 
 id_list = open('files/list.txt', 'a')  # open file for job IDs
-# id_list.write(job_id + '\n')  # write job ID to file
+id_list.write(job_id + '\n')  # write job ID to file
 id_list.close()  # close ID list file
 
 job_type = job_id.split('-')
