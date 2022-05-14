@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Input Page - Demo</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+
+</head>
+<body>
+
+    <h1>MSA Viewer - Demo</h1>
+
+    <p>This is multiple sequence alignment (MSA) results viewer for MSA results in Clustal format. By entering the job
+        ID for a recent (within the last 7 days) MSA, the alignment results as well as some unique statistics can be
+        viewed. MSA tools which provide a ClustalW format include: Clustal Omega, MAFFT, MUSCLE*, and T-Coffee.</p>
+
+    <p class="small">
+        *This viewer was originally designed for MUSCLE results, but can accept appropriately formatted results of the
+        other 3 tools as well.
+    </p>
+
+    <!-- fake form elements-->
+    <section class="fake_form">
+        <!-- the input is fake -->
+        <input id="job_id" type="search" value="" autofocus="autofocus" placeholder="Enter a job ID">
+        <!-- the submit button is a link to demo_view.html -->
+        <a href="templates/demo_view.html">
+        <button>Submit</button></a>
+    </section>
+
+    <!-- images (logos) -->
+    <!-- "I added these images because it seemed fun to do." - Gees -->
+    <footer>
+        <center>
+        <img src="img/jhu_logo.svg" class="bg" alt="Johns Hopkins University logo from
+        https://www.jhu.edu/admissions/ header"> &nbsp; &nbsp; &nbsp;
+        <img src="img/embl_ebi_logo.svg" alt="EMBL-EBI logo from
+        https://www.ebi.ac.uk/Tools/msa/ footer">
+        </center>
+    </footer>
+
+</body>
+</html>
+
+<!-- Katharina Gees -->

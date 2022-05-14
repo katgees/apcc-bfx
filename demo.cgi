@@ -12,7 +12,7 @@ job_id = 'muscle-I20220513-220023-0114-59900534-p2m'  # hardcoded job id
 
 templateLoader = jinja2.FileSystemLoader(searchpath="./templates")  # find template
 env = jinja2.Environment(loader=templateLoader)  # create environment
-template = env.get_template('demo.html')  # load template
+template = env.get_template('demo_output.html')  # load template
 
 id_list = open('files/list.txt', 'a')  # open file for job IDs
 id_list.write(job_id + '\n')  # write job ID to file

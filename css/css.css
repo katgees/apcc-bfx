@@ -11,13 +11,17 @@ body {
     padding: 16px 48px 16px;
 }
 
+.fake_form {
+    text-align: center;
+    padding-top: 25px;
+}
+
 footer {
     padding-top: 48px;
 }
 
 form {
     text-align: center;
-    padding-bottom: 25px;
     padding-top: 25px;
 }
 
@@ -42,6 +46,7 @@ img {
 
 .special {
     color: #333;
+    font-weight: bold;
 }
 
 table,td, th {
