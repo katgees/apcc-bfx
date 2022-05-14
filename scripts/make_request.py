@@ -9,11 +9,14 @@ import requests
 
 
 def make_request():
+    # hardcoded job ID
     job_id = 'muscle-I20220514-204523-0793-10767007-p1m'
 
+    # get job type from the job ID
     job_type = job_id.split('-')
     job_type = job_type[0]
 
+    # request
     response = requests.get('https://www.ebi.ac.uk/Tools/services/rest/'
                             + job_type + '/result/'
                             + job_id + '/aln-clustalw')
