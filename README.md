@@ -7,7 +7,7 @@
 **Katharina Gees**
 
 ***
-## Getting Started
+### Getting Started
 In order to use the MSA viewer, you will need a recent (within the 
 last 7 days) multiple sequence alignment (MSA) from EMBL-EBI. There
 are multiple MSA tools available at https://www.ebi.ac.uk/Tools/msa/,
@@ -25,7 +25,7 @@ FASTA.*
 >To quickly generate MSA results/acquire a job ID you can use 
 > the 'example sequence' option.
 
-### Prerequisites
+#### Prerequisites
 1. Have a basic understanding of UNIX OS/command line and Python, and have
 these technologies installed.
 2. Install these required Python modules:
@@ -37,7 +37,7 @@ these technologies installed.
 
 3. Download the entire GitHub repository.
 
-## Using the Demos
+### Using the Demos
 
 There are 2 demonstration versions of the MSA viewer.
 
@@ -56,7 +56,7 @@ in your browser.
 >Error troubleshooting: it may be necessary to run the dos2unix command
 > on the **demo.cgi** file (*$ dos2unix demo.cgi*).
 
-## Using the Main
+### Using the Main
 
 **These instructions assume that you have read through and completed the 
 'Getting Started' and 'Prerequisites' sections above.*
@@ -72,7 +72,7 @@ in your browser.
 > on the **main.cgi** file (*$ dos2unix main.cgi*).
 
 ***
-## Resources
+### Resources
 The **scripts** folder in the repository contains multiple scripts related 
 to the project. These scripts perform different tasks which are combined 
 within the cgi files.
@@ -82,8 +82,3 @@ within the cgi files.
 * **read_file.py** - Python script to read Clustal* files
 
 These exist as "building blocks" for future projects.
-
----
-
-The **proposal_and_report** folder contains the rough and final drafts of the
-project proposal and report.
