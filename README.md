@@ -82,3 +82,8 @@ within the cgi files.
 * **read_file.py** - Python script to read Clustal* files
 
 These exist as "building blocks" for future projects.
+
+---
+
+The **proposal_and_report** folder contains the rough and final drafts of the
+project proposal and report.
