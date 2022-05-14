@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Output Page</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+
+</head>
+<body>
+
+    <h1>MSA Viewer</h1>
+
+    <p class="special">
+        Job ID:&nbsp;{{ ji }}
+    </p>
+
+    <p class="medium">
+        <pre>
+{% for a in aln %}
+{{ a }}{% endfor %}
+        </pre>
+    </p>
+
+    <table>
+        <tr>
+            <th>Asterisks</th>
+            <th>&emsp;*&emsp;</th>
+            <th>{{ ast }}</th>
+        </tr>
+        <tr>
+            <th>Colons</th>
+            <th>&emsp;:&emsp;</th>
+            <th>{{ col }}</th>
+        </tr>
+        <tr>
+            <th>Periods</th>
+            <th>&emsp;.&emsp;</th>
+            <th>{{ per }}</th>
+        </tr>
+    </table>
+
+    <p class="small">
+        Asterisks indicate positions which have a single, fully conserved residue.<br>
+        Colons indicate conservation between groups of strongly similar properties.<br>
+        Periods indicate conservation between groups of weakly similar properties.<br>
+    </p>
+
+    <!-- images (logos) -->
+    <!-- "I added these images because it seemed fun to do." - Gees -->
+    <footer>
+        <center>
+        <img src="../img/jhu_logo.svg" class="bg" alt="Johns Hopkins University logo from
+        https://www.jhu.edu/admissions/ header"> &nbsp; &nbsp; &nbsp;
+        <img src="../img/embl_ebi_logo.svg" alt="EMBL-EBI logo from
+        https://www.ebi.ac.uk/Tools/msa/ footer">
+        </center>
+    </footer>
+
+</body>
+</html>
+
+<!-- Katharina Gees -->
