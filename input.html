@@ -7,6 +7,7 @@
 
     <!-- css links -->
     <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <link rel="stylesheet" type="text/css" href="../css/css.css" />
 
 </head>
 <body>
@@ -23,7 +24,7 @@
     </p>
 
     <form name="input_form" id="input_form" method="post" action="./main.cgi" >
-        <input id="job_id" type="search" value="" autofocus="autofocus" placeholder="Enter a job ID">
+        <input name="job_id_input" id="job_id_input" type="search" value="" autofocus="autofocus" placeholder="Enter a job ID">
         <input name="submit" type="submit" id="submit" value="Submit">
 
     </form>
@@ -32,9 +33,13 @@
     <!-- "I added these images because it seemed fun to do." - Gees -->
     <footer>
         <center>
-        <img src="img/jhu_logo.svg" class="bg" alt="Johns Hopkins University logo from
+        <img src="img/jhu_logo.svg" class="bg"
+             onerror='this.src = "../img/jhu_logo.svg"'
+             alt="Johns Hopkins University logo from
         https://www.jhu.edu/admissions/ header"> &nbsp; &nbsp; &nbsp;
-        <img src="img/embl_ebi_logo.svg" alt="EMBL-EBI logo from
+        <img src="img/embl_ebi_logo.svg"
+             onerror='this.src = "../img/embl_ebi_logo.svg"'
+             alt="EMBL-EBI logo from
         https://www.ebi.ac.uk/Tools/msa/ footer">
         </center>
     </footer>
