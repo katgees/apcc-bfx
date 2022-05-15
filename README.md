@@ -76,7 +76,7 @@ the file in your browser.
 
 ***
 ### Resources
-####Scripts
+
 The **scripts** folder in the repository contains multiple scripts related 
 to the project. These scripts perform different tasks which are combined 
 within the cgi files.
@@ -88,6 +88,5 @@ within the cgi files.
 
 These exist as "building blocks" for future projects.
 
-####Tarball/Tarfile 
-The tar.gz file for the repo was created using the command *$ tar czf 
+>The tar.gz file was created using *$ tar czf 
 tarball-apcc-bfx.tar.gz **apcc-bfx***.
