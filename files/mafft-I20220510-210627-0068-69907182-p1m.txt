@@ -1,4 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<error>
- <description>Requested renderer 'aln-clustalw' not available for the results of job 'mafft-I20220510-210627-0068-69907182-p1m'</description>
-</error>
