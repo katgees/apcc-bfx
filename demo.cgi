@@ -5,7 +5,6 @@ import requests
 
 # CGI error reporting
 import cgitb
-
 cgitb.enable()
 
 print("Content-Type: text/html\n\n")
