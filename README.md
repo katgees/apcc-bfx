@@ -11,12 +11,13 @@
 In order to use the MSA viewer, you will need a recent (within the 
 last 7 days) multiple sequence alignment (MSA) from EMBL-EBI. There
 are multiple MSA tools available at https://www.ebi.ac.uk/Tools/msa/,
-however only 4 of them generate results in Clustal/ClustalW format 
+however only 4 of them generate results in ClustalW format 
 which is required for this viewer. These are the 4 tools: Clustal 
 Omega, MAFFT*, MUSCLE, and T-Coffee.
 
-**Please note that the default output format for MAFFT is Pearson/
-FASTA.*
+**Please note that the default output format for Clustal Omega is 
+Clustal with character counts and the default format for MAFFT is 
+Pearson/FASTA. Only use ClustalW.*
 
 >The **files** folder in the repository contains a text file called
 > **job_id_list.txt** which contains some MSA job IDs, though they 
