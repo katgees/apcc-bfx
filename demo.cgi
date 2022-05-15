@@ -10,7 +10,7 @@ cgitb.enable()
 print("Content-Type: text/html\n\n")
 
 # DEMO ONLY
-job_id = 'muscle-I20220513-220023-0114-59900534-p2'  # hardcoded job id
+job_id = 'muscle-I20220513-220023-0114-59900534-p2m'  # hardcoded job id
 # DEMO ONLY
 
 # Jinja2
