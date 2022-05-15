@@ -31,9 +31,12 @@ id_list.close()  # close ID list file
 # make request
 job_type = job_id.split('-')
 job_type = job_type[0]
+if job_type == 'clustalo':
+    result = '/aln-clustal'
+else: result = '/aln-clustalw'
 response = requests.get('https://www.ebi.ac.uk/Tools/services/rest/'
                         + job_type + '/result/'
-                        + job_id + '/aln-clustalw')  # requests.get returns a status code
+                        + job_id + result)  # requests.get returns a status code
 
 # save alignment to text file
 aln_clustalw = response.text  # .text returns the content
